@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nitin Creatives — Video Editing, Web Design & More</title>
+    <meta name="description" content="Premium creative services: Video Editing, Website Design, Motion Graphics, Social Media Management. Let's bring your vision to life.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="navbar" id="navbar">
+        <a href="#" class="nav-logo">
+            <img src="logo.png" alt="Logo" class="logo-img">
+            <span class="logo-text">Nitin<span class="logo-accent">Creatives</span></span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#testimonials">Reviews</a></li>
+            <li><a href="#contact" class="nav-cta">Hire Me</a></li>
+        </ul>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <header class="hero" id="hero">
+        <canvas id="heroTubesCanvas" class="hero-tubes-canvas"></canvas>
+        <div class="hero-bg-grid"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Available for Freelance Projects
+            </div>
+            <h1 class="hero-title">
+                I Craft <span class="gradient-text">Digital Experiences</span> That Convert
+            </h1>
+            <p class="hero-subtitle">
+                Video Editing • Website Design • Motion Graphics • Brand Identity<br>
+                Helping businesses stand out in the digital world.
+            </p>
+            <div class="hero-actions">
+                <a href="#portfolio" class="btn btn-primary">
+                    <span>View My Work</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <span>Get a Quote</span>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-target="50">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Projects Done</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-target="30">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Happy Clients</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-target="3">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Years Exp.</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </header>
+
+    <!-- ===== SERVICES ===== -->
+    <section class="services" id="services">
+        <div class="section-header">
+            <span class="section-tag">What I Do</span>
+            <h2 class="section-title">Services That <span class="gradient-text">Deliver Results</span></h2>
+            <p class="section-desc">From concept to delivery — every project gets my full creative attention.</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card" data-tilt>
+                <div class="service-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M7 8l3 2-3 2"/><line x1="13" y1="12" x2="16" y2="12"/></svg>
+                </div>
+                <h3>Video Editing</h3>
+                <p>Professional cuts, color grading, transitions, and VFX that turn raw footage into cinematic stories.</p>
+                <div class="service-tags">
+                    <span>Premiere Pro</span><span>DaVinci</span><span>After Effects</span>
+                </div>
+            </div>
+            <div class="service-card" data-tilt>
+                <div class="service-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                </div>
+                <h3>Website Design</h3>
+                <p>Stunning, responsive websites that load fast, look premium, and convert visitors into customers.</p>
+                <div class="service-tags">
+                    <span>HTML/CSS</span><span>React</span><span>WordPress</span>
+                </div>
+            </div>
+            <div class="service-card" data-tilt>
+                <div class="service-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v18M5.5 7.5l13 9M18.5 7.5l-13 9"/><circle cx="12" cy="12" r="3"/></svg>
+                </div>
+                <h3>Motion Graphics</h3>
+                <p>Eye-catching animations, intros, lower thirds, and kinetic typography for brands that move.</p>
+                <div class="service-tags">
+                    <span>After Effects</span><span>Blender</span><span>Cinema 4D</span>
+                </div>
+            </div>
+            <div class="service-card" data-tilt>
+                <div class="service-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+                </div>
+                <h3>Brand Identity</h3>
+                <p>Logos, brand guides, packaging, and visual systems that make your brand unforgettable.</p>
+                <div class="service-tags">
+                    <span>Illustrator</span><span>Figma</span><span>Photoshop</span>
+                </div>
+            </div>
+            <div class="service-card" data-tilt>
+                <div class="service-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+                </div>
+                <h3>Social Media</h3>
+                <p>Content calendars, post designs, reels editing, and strategies that grow your online presence.</p>
+                <div class="service-tags">
+                    <span>Instagram</span><span>YouTube</span><span>TikTok</span>
+                </div>
+            </div>
+            <div class="service-card" data-tilt>
+                <div class="service-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+                </div>
+                <h3>YouTube Growth</h3>
+                <p>Thumbnails, channel branding, SEO optimization, and editing that boosts views and subscribers.</p>
+                <div class="service-tags">
+                    <span>Thumbnails</span><span>SEO</span><span>Analytics</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PORTFOLIO — STACKING CARDS ===== -->
+    <section class="portfolio" id="portfolio">
+        <div class="section-header">
+            <span class="section-tag">My Work</span>
+            <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+            <p class="section-desc">Scroll down to explore — each card stacks on top of the previous one.</p>
+        </div>
+        <div class="stack-cards-container">
+            <div class="stack-card" style="--card-index: 0;">
+                <div class="stack-card-inner">
+                    <div class="stack-card-image">
+                        <img src="video-editing.png" alt="Cinematic Video Edit Project">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="stack-card-content">
+                        <span class="card-category">Video Editing</span>
+                        <h3 class="card-title">Cinematic Brand Film</h3>
+                        <p class="card-desc">Full post-production for a luxury fashion brand — color grading, sound design, and seamless transitions that tell a story.</p>
+                        <div class="card-meta">
+                            <span class="meta-tag">Premiere Pro</span>
+                            <span class="meta-tag">DaVinci Resolve</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stack-card" style="--card-index: 1;">
+                <div class="stack-card-inner">
+                    <div class="stack-card-image">
+                        <img src="web-design.png" alt="E-commerce Website Design">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="stack-card-content">
+                        <span class="card-category">Web Design</span>
+                        <h3 class="card-title">Premium E-Commerce Store</h3>
+                        <p class="card-desc">A dark-themed, glassmorphic e-commerce website with blazing-fast load times, cart integration, and mobile-first design.</p>
+                        <div class="card-meta">
+                            <span class="meta-tag">HTML/CSS</span>
+                            <span class="meta-tag">JavaScript</span>
+                            <span class="meta-tag">Responsive</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stack-card" style="--card-index: 2;">
+                <div class="stack-card-inner">
+                    <div class="stack-card-image">
+                        <img src="graphic-design.png" alt="Brand Identity Design">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="stack-card-content">
+                        <span class="card-category">Brand Identity</span>
+                        <h3 class="card-title">Complete Brand Overhaul</h3>
+                        <p class="card-desc">Logo redesign, color system, typography, business cards, and comprehensive brand guidelines for a tech startup.</p>
+                        <div class="card-meta">
+                            <span class="meta-tag">Illustrator</span>
+                            <span class="meta-tag">Figma</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stack-card" style="--card-index: 3;">
+                <div class="stack-card-inner">
+                    <div class="stack-card-image">
+                        <img src="motion-graphics.png" alt="Motion Graphics Reel">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="stack-card-content">
+                        <span class="card-category">Motion Graphics</span>
+                        <h3 class="card-title">Animated Explainer Video</h3>
+                        <p class="card-desc">2D/3D animation with kinetic typography and particle effects for a SaaS product launch campaign.</p>
+                        <div class="card-meta">
+                            <span class="meta-tag">After Effects</span>
+                            <span class="meta-tag">Cinema 4D</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stack-card" style="--card-index: 4;">
+                <div class="stack-card-inner">
+                    <div class="stack-card-image">
+                        <img src="social-media.png" alt="Social Media Campaign">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="stack-card-content">
+                        <span class="card-category">Social Media</span>
+                        <h3 class="card-title">Instagram Growth Campaign</h3>
+                        <p class="card-desc">Content strategy, reel editing, and post design that grew a brand's following from 2K to 50K in 6 months.</p>
+                        <div class="card-meta">
+                            <span class="meta-tag">Instagram</span>
+                            <span class="meta-tag">Reels</span>
+                            <span class="meta-tag">Strategy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROCESS ===== -->
+    <section class="process" id="process">
+        <div class="section-header">
+            <span class="section-tag">How I Work</span>
+            <h2 class="section-title">My <span class="gradient-text">Process</span></h2>
+        </div>
+        <div class="process-timeline">
+            <div class="process-step">
+                <div class="step-number">01</div>
+                <div class="step-content">
+                    <h3>Discovery Call</h3>
+                    <p>We hop on a quick call to understand your goals, brand, and what you're looking for. No pressure — just a conversation.</p>
+                </div>
+            </div>
+            <div class="process-step">
+                <div class="step-number">02</div>
+                <div class="step-content">
+                    <h3>Proposal & Plan</h3>
+                    <p>I send you a clear proposal with scope, timeline, and pricing. You know exactly what you're getting before we start.</p>
+                </div>
+            </div>
+            <div class="process-step">
+                <div class="step-number">03</div>
+                <div class="step-content">
+                    <h3>Execution</h3>
+                    <p>I get to work — with regular updates and check-ins so you're never in the dark. You'll see progress in real-time.</p>
+                </div>
+            </div>
+            <div class="process-step">
+                <div class="step-number">04</div>
+                <div class="step-content">
+                    <h3>Delivery & Revisions</h3>
+                    <p>Final files delivered on time. Every project includes revision rounds to make sure it's perfect.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="about" id="about">
+        <div class="about-wrapper">
+            <div class="about-visual">
+                <div class="about-image-frame">
+                    <div class="about-avatar">
+                        <span class="avatar-emoji">🎬</span>
+                    </div>
+                    <div class="about-float-card card-1">
+                        <span>🎥</span> Video Editing
+                    </div>
+                    <div class="about-float-card card-2">
+                        <span>🌐</span> Web Design
+                    </div>
+                    <div class="about-float-card card-3">
+                        <span>🎨</span> Graphics
+                    </div>
+                </div>
+            </div>
+            <div class="about-text">
+                <span class="section-tag">About Me</span>
+                <h2 class="section-title">The Creative <span class="gradient-text">Behind the Screen</span></h2>
+                <p>I'm a multi-disciplinary creative professional with 3+ years of experience turning ideas into visual reality. Whether it's editing a cinematic YouTube video, designing a conversion-focused website, or crafting a brand identity — I bring the same level of passion and precision to every project.</p>
+                <p>I believe great design isn't just about looking good — it's about solving problems, telling stories, and creating experiences that people remember.</p>
+                <div class="about-tools">
+                    <h4>Tools I Use</h4>
+                    <div class="tools-list">
+                        <span class="tool-badge">Premiere Pro</span>
+                        <span class="tool-badge">After Effects</span>
+                        <span class="tool-badge">DaVinci Resolve</span>
+                        <span class="tool-badge">Figma</span>
+                        <span class="tool-badge">Photoshop</span>
+                        <span class="tool-badge">Illustrator</span>
+                        <span class="tool-badge">VS Code</span>
+                        <span class="tool-badge">Blender</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="testimonials" id="testimonials">
+        <div class="section-header">
+            <span class="section-tag">Client Love</span>
+            <h2 class="section-title">What People <span class="gradient-text">Say About Me</span></h2>
+        </div>
+        <div class="testimonial-track">
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p>"Absolutely blown away by the quality. The video edit was cinematic, delivered ahead of schedule, and the communication was flawless."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">R</div>
+                    <div>
+                        <strong>Rahul Sharma</strong>
+                        <span>YouTube Creator</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p>"Our website went from basic to absolutely premium. Sales increased 40% in the first month after launch. Worth every penny."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">P</div>
+                    <div>
+                        <strong>Priya Patel</strong>
+                        <span>E-Commerce Owner</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p>"The brand identity they created for us perfectly captured our vision. Professional, creative, and incredibly detail-oriented."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">A</div>
+                    <div>
+                        <strong>Amit Verma</strong>
+                        <span>Startup Founder</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p>"Our Instagram grew from 5K to 45K followers with their social media strategy. The content quality is unmatched."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">S</div>
+                    <div>
+                        <strong>Sneha Gupta</strong>
+                        <span>Fashion Brand</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA / CONTACT ===== -->
+    <section class="contact" id="contact">
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <span class="section-tag">Let's Talk</span>
+                <h2 class="section-title">Ready to Start <span class="gradient-text">Your Project?</span></h2>
+                <p>Drop me a message with your project details and I'll get back to you within 24 hours. Let's create something amazing together.</p>
+                <div class="contact-methods">
+                    <a href="mailto:technitin73@gmail.com" class="contact-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg>
+                        technitin73@gmail.com
+                    </a>
+                    <a href="https://wa.me/917324919140" class="contact-link" target="_blank">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+                        +91 73249 19140
+                    </a>
+                    <a href="https://instagram.com/nitin.creation.x" class="contact-link" target="_blank">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/></svg>
+                        @nitin.creation.x
+                    </a>
+                </div>
+            </div>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="service">Service Needed</label>
+                    <select id="service" name="service" required>
+                        <option value="" disabled selected>Select a service</option>
+                        <option value="video-editing">Video Editing</option>
+                        <option value="web-design">Website Design</option>
+                        <option value="motion-graphics">Motion Graphics</option>
+                        <option value="brand-identity">Brand Identity</option>
+                        <option value="social-media">Social Media</option>
+                        <option value="youtube">YouTube Growth</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="budget">Budget Range</label>
+                    <select id="budget" name="budget">
+                        <option value="" disabled selected>Select budget</option>
+                        <option value="5k-15k">₹5,000 — ₹15,000</option>
+                        <option value="15k-30k">₹15,000 — ₹30,000</option>
+                        <option value="30k-50k">₹30,000 — ₹50,000</option>
+                        <option value="50k+">₹50,000+</option>
+                    </select>
+                </div>
+                <div class="form-group full-width">
+                    <label for="message">Project Details</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Tell me about your project..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                    <span>Send Message</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-content">
+            <a href="#" class="nav-logo">
+                <img src="logo.png" alt="Logo" class="logo-img">
+                <span class="logo-text">Nitin<span class="logo-accent">Creatives</span></span>
+            </a>
+            <p class="footer-tagline">Turning visions into digital reality.</p>
+            <div class="footer-links">
+                <a href="#services">Services</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 NitinCreatives. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
